@@ -1,0 +1,21 @@
+.player {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 1em;
+  place-items: center;
+  border: 1px solid lightgray;
+  padding: 5px;
+}
+.player .avater {
+  width: 130px;
+  height: 130px;
+  border-radius: 50px;
+  border: 1px solid lightgray;
+  overflow: hidden;
+}
+.avater img {
+  width: 150px;
+}
+p {
+  margin: 0;
+}
