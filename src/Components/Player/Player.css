@@ -10,12 +10,17 @@
 .player .avater {
   width: 150px;
   height: 150px;
-  border-radius: 50px;
+  /* border-radius: 50px; */
+  border: 1px solid lightgray;
+
+  padding: 2px;
   border: 1px solid lightgray;
   overflow: hidden;
 }
 .avater img {
   width: 150px;
+  padding: 2px;
+  border: 1px solid lightgray;
 }
 p {
   margin: 0;
