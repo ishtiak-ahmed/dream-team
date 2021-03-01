@@ -1,24 +1,14 @@
 .player {
   display: grid;
-  grid-template-columns: 1fr 2.5fr;
-  grid-gap: 1em;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 5px;
   place-items: center;
   padding: 5px;
   border-radius: 5px;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
 }
-.player .avater {
-  width: 150px;
-  height: 150px;
-  /* border-radius: 50px; */
-  border: 1px solid lightgray;
 
-  padding: 2px;
-  border: 1px solid lightgray;
-  overflow: hidden;
-}
 .avater img {
-  width: 150px;
   padding: 2px;
   border: 1px solid lightgray;
 }
