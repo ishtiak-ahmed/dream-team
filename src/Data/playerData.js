@@ -1,7 +1,7 @@
 const playerData = [
     { "id": 1, "name": "David Warner", "salary": 1200000, "role": "Batsman", "img": "https://p.imgci.com/db/PICTURES/CMS/263500/263541.1.jpg" },
-    { "id": 2, "name": "Jos Butler", "salary": 1000000, "role": "KeeperBatsman", "img": "https://p.imgci.com/db/PICTURES/CMS/303900/303969.jpg" },
-    { "id": 3, "name": "Ab De Villiers", "salary": 1600000, "role": "KeeperBatsman", "img": "https://p.imgci.com/db/PICTURES/CMS/263700/263764.1.jpg" },
+    { "id": 2, "name": "Jos Butler", "salary": 1000000, "role": "WK Batsman", "img": "https://p.imgci.com/db/PICTURES/CMS/303900/303969.jpg" },
+    { "id": 3, "name": "Ab De Villiers", "salary": 1600000, "role": "WK Batsman", "img": "https://p.imgci.com/db/PICTURES/CMS/263700/263764.1.jpg" },
     { "id": 4, "name": "Glen Maxwell", "salary": 2000000, "role": "Allrounder", "img": "https://p.imgci.com/db/PICTURES/CMS/263500/263539.1.jpg" },
     { "id": 5, "name": "Eoin Morgan", "salary": 800000, "role": "Batsman", "img": "https://p.imgci.com/db/PICTURES/CMS/303900/303947.jpg" },
     { "id": 6, "name": "Kieron Pollard", "salary": 1200000, "role": "Allrounder", "img": "https://p.imgci.com/db/PICTURES/CMS/203300/203305.1.jpg" },
