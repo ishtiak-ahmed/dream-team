@@ -4,6 +4,7 @@ import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 import playerData from './Data/playerData.js'
 import Player from './Components/Player/Player';
 import { useEffect, useState } from 'react';
+import Team from './Components/Player/Team/Team';
 
 function App() {
   const [players, setPlayers] = useState([])
@@ -12,8 +13,17 @@ function App() {
     setPlayers(playerData)
   }, [])
   const addToTeam = (player) => {
-    console.log('player added', player)
-    const newTeam = [...team, player]
+    if (team.indexOf(player) >= 0) {
+      console.log('Players is already in the team.')
+    } else if (team.length === 11) {
+      alert("You already have 11 players in your team. Remove someone.")
+    } else {
+      const newTeam = [...team, player]
+      setTeam(newTeam)
+    }
+  }
+  const removePlayer = (player) => {
+    const newTeam = team.filter(ply => ply.name !== player.name);
     setTeam(newTeam)
   }
   const totalCost = team.reduce((cost, player) => cost + player.salary, 0)
@@ -34,6 +44,11 @@ function App() {
           <h2>Your team</h2>
           <h4>Player added: {team.length}</h4>
           <p>Total Cost: {totalCost}</p>
+          <ul>
+            {
+              team.map(player => <Team key={player.id} event={removePlayer} player={player}></Team>)
+            }
+          </ul>
         </div>
       </main>
     </div>

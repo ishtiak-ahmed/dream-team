@@ -9,13 +9,13 @@ const Player = (props) => {
     return (
         <div className="player">
             <div className="avatar">
-                <img src={img} alt="" />
+                <img src={img} className="rounded-circle" alt="" />
             </div>
             <div className="info">
                 <p className="fs-6"><strong>{name}</strong></p>
                 <p><small>Role: {role}</small></p>
                 <p><small>Salary: ${salary}</small></p>
-                <button onClick={() => handleAddPlayer(props.player)}>Add To Team</button>
+                <button className="btn btn-warning btn-sm" onClick={() => handleAddPlayer(props.player)}>Add To Team</button>
             </div>
         </div >
     );
