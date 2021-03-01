@@ -1,12 +1,43 @@
-.app {
-  max-width: 1140px;
-  margin: auto;
+body {
+  max-width: 100%;
+  overflow: hidden;
+}
+header {
+  text-align: center;
+  line-height: 60px;
+  padding: 15px;
+  background-color: #032841;
+  color: #fff;
+}
+h3 {
+  padding: 5px 0;
 }
 .allplayers {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 5px;
+  grid-gap: 8px;
 }
 img {
   max-width: 100%;
+}
+.player-container {
+  padding-left: 50px;
+}
+
+.myteam {
+  background-color: #fffff3;
+  border-left: 1px solid lightgray;
+  padding: 0 50px;
+}
+.team-player {
+  display: flex;
+  padding: 5px;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  justify-content: space-between;
+  cursor: pointer;
+}
+.team-player:hover {
+  background-color: #fff;
 }

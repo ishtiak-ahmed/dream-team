@@ -1,6 +1,4 @@
 import './App.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 import playerData from './Data/playerData.js'
 import Player from './Components/Player/Player';
 import { useEffect, useState } from 'react';
@@ -29,11 +27,12 @@ function App() {
   const totalCost = team.reduce((cost, player) => cost + player.salary, 0)
   return (
     <div className="App">
-      <FontAwesomeIcon icon={faCoffee} />
-      <h1>Dream Team, Build Your Alltime T20 team.</h1>
+      <header>
+        <h1>Dream Team, Build Your Alltime T20 team.</h1>
+      </header>
       <main className="row">
-        <div className="col-md-9">
-          <h2>Select Player to build your team.</h2>
+        <div className="col-md-9 player-container">
+          <h3 className="text-center">Select Player to build your team.</h3>
           <div className="allplayers">
             {
               players.map(player => <Player player={player} event={addToTeam} key={player.id}></Player>)
@@ -41,7 +40,7 @@ function App() {
           </div>
         </div>
         <div className="myteam col-md-3">
-          <h2>Your team</h2>
+          <h3>Your team</h3>
           <h4>Player added: {team.length}</h4>
           <p>Total Cost: {totalCost}</p>
           <ul>
