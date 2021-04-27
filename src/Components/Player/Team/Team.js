@@ -11,6 +11,7 @@ const Team = (props) => {
             <div>
                 <FontAwesomeIcon onClick={() => props.event(player)} icon={faTimesCircle} />
             </div>
+
         </div>)
 };
 

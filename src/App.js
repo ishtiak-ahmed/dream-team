@@ -25,6 +25,14 @@ function App() {
     setTeam(newTeam)
   }
   const totalCost = team.reduce((cost, player) => cost + player.salary, 0)
+
+  // const teamCombo = {
+  //   batsman: Team.filter(ply => ply.role === 'Batsman'),
+  //   bowler: Team.filter(ply => ply.role === 'Bowler'),
+  //   wk: Team.filter(ply => ply.role === 'WK Batsman'),
+  //   allrounder: Team.filter(ply => ply.role === 'Allrounder')
+  // }
+
   return (
     <div className="App">
       <header>
